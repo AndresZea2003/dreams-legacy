@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<div class="text-red-200 , text-7xl, bg-gray-200 , bg-cover">Dreams</div>
+<div class="text-red-200 , text-7xl, bg-gray-200 , bg-cover"> <a href="{{ route('welcome') }}">Dreams</a></div>
     <div>
         <ul>
          <li><a href="{{ route('home') }}">Home</a></li>
