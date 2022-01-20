@@ -7,8 +7,8 @@
 <form action="{{ route('register') }}" method="POST">
     @csrf
     <label>
-        <input type="text" name="UserName" value="{{ old('UserName') }}" placeholder="UserName...">
-
+        <input type="text" name="name" value="{{ old('name') }}" placeholder="name...">
+Username
         @error('email') <div>{{ $message }}</div>  @enderror
 
     </label>
@@ -25,7 +25,7 @@
 
     </label>
     <label>
-        <input type="password" name="password" placeholder="Password...">
+        <input type="password" name="password_confirmation" placeholder="Password...">
 
         @error('password') <div>{{ $message }}</div> @enderror
 
