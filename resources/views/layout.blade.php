@@ -9,16 +9,17 @@
 </head>
 <body>
 
-<div class="text-red-200 , text-7xl, bg-gray-200 , bg-cover"> <a href="{{ route('welcome') }}">Dreams</a></div>
-    <div>
-        <ul>
-         <li><a href="{{ route('home') }}">Home</a></li>
-         <li><a href="{{ route('login') }}">Login</a></li>
-         <li><a href="{{ route('register') }}">register</a></li>
-        </ul>
-    </div>
-    <div>
-       @yield('content')
-    </div>
+<div class="bg-prism 0 h-screen flex justify-center items-center">
+
+   
+    
+    
+        <div>
+             @yield('content')
+         </div>
+
+  
+
+</div>
 </body>
 </html>
