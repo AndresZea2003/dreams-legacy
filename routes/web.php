@@ -22,5 +22,3 @@ Route::view('/', 'welcome')->name('welcome');
 
 Route::view('/home', 'home')->Middleware(['auth', 'verified'])->name('home');
 //Route::view('/home', 'home')->name('home');
-
-

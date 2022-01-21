@@ -12,10 +12,12 @@
             que se ha enviado a tu direccion de correo, <br> si no recibiste el enlace puedes reenviarlo dandole clic al boton de reenviar 
         </p>
     </div>
-      
+    <form action="{{ route('verification.send') }}" method="POST">
+        @csrf
       <div class="flex items-center justify-between px-5 py-5">
-        <input class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Resend Verification Email">
-        
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit" value="Resend Verification Email">Resend Verification Email</button>
+    </form>
+
         <form action="{{ route('logout') }}" method="POST">
             @csrf
             <button class="bg-red-500 hover:bg-red-800 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">logout</button>
