@@ -1,5 +1,6 @@
 <?php
 
+use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,4 +20,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('welcome');
 
-Route::view('/home', 'home')->name('home');
+Route::view('/home', 'home')->Middleware(['auth', 'verified'])->name('home');
+//Route::view('/home', 'home')->name('home');
+
+
