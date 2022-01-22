@@ -1,4 +1,4 @@
-<div class="w-full max-w-xs">
+<div class="w-full max-w-xs ">
 
 
   
