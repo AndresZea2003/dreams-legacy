@@ -1,11 +1,11 @@
-<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-800 self-start">
+<nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 self-start">
     <div class="container flex flex-wrap justify-between items-center mx-auto">
     
 <div class="hover:text-white">
 
         <a href="/home" class="flex">
       <x-logo></x-logo>
-        <span class="self-center font-semibold whitespace-nowrap text-sky-800 text-6xl font-fugaz-one hover:text-white">Dreams</span>
+        <span class="self-center font-semibold whitespace-nowrap text-sky-800 text-6xl font-fugaz-one hover:text-gray-200">Dreams</span>
     </a>
 
 </div>
@@ -57,7 +57,7 @@
           <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
         </li>
         <li>
-          <a href="/MyAccount" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Mi cuenta</a>
+          <a href="/profile" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Mi cuenta</a>
         </li>
       </ul>
     </div>

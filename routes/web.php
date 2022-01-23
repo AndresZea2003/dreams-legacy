@@ -23,4 +23,6 @@ Route::view('/', 'welcome')->name('welcome');
 Route::view('/home', 'home')->Middleware(['auth', 'verified'])->name('home');
 //Route::view('/home', 'home')->name('home');
 
-Route::view('/MyAccount', 'MyAccount')->name('MyAccount');
+Route::view('/profile', 'profile.profile')->name('profile');
+Route::view('/dates', 'profile.dates')->name('dates');
+Route::view('/users', 'profile.user')->name('users');
