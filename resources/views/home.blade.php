@@ -2,7 +2,6 @@
 
 @section('content')
 
-<x-nav-bar></x-nav-bar>
 
 <div class="bg-sky-200 flex-col py-5 px-5 rounded-lg font-alatsi shadow-lg shadow-cyan-500/50 grid grid-cols-3" id="app" >
 
@@ -14,12 +13,6 @@
 
 
 
-
-
-<div>
-
-    medio
-</div>
 {{ auth()->user() }}
 
 

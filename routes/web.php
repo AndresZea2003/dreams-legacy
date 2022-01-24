@@ -25,4 +25,4 @@ Route::view('/home', 'home')->Middleware(['auth', 'verified'])->name('home');
 
 Route::view('/profile', 'profile.profile')->name('profile');
 Route::view('/dates', 'profile.dates')->name('dates');
-Route::view('/users', 'profile.user')->name('users');
+Route::view('/users', 'profile.users')->name('users');
