@@ -8,9 +8,10 @@
     <title>Dreams</title>
 </head>
 <body>    
-        <div id="app">
+        <main id="app">
+            <vue-setup csrf={{csrf_token()}} :routes="{{json_encode(Route::getRoutes()->compile())}}"></vue-setup>
              @yield('main')
-         </div>
+        </main>
 
 <script src="{{ asset('js/app.js') }}"></script>
 </body>
