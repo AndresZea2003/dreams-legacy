@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PostController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Route;
 
@@ -20,9 +21,19 @@ use Illuminate\Support\Facades\Route;
 
 Route::view('/', 'welcome')->name('welcome');
 
-Route::view('/home', 'home')->Middleware(['auth', 'verified'])->name('home');
-//Route::view('/home', 'home')->name('home');
+Route::view('/panel', 'panel')->name('panel');
 
-Route::view('/profile', 'profile.profile')->name('profile');
-Route::view('/dates', 'profile.dates')->name('dates');
-Route::view('/users', 'profile.users')->name('users');
+Route::view('/users', 'users.index')->name('users.index');
+
+Route::group(['middleware' => ['auth', 'verified']], function () {
+
+    Route::View('/home', 'home')->name('home');
+
+    Route::View('/profile', 'profile')->name('profile');
+
+    });
+
+
+
+
+//Route::resource('Users', UsersController::class);

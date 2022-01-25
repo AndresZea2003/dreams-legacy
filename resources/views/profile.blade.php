@@ -2,11 +2,9 @@
 
 @section('content')
 
-
-
 <div class="bg-white  py-5 px-5 rounded-lg font-alatsi shadow-lg shadow-cyan-500/50 my-5 mx-5" id="app">
     <div>
-          <span class="self-center font-semibold whitespace-nowrap text-sky-800 text-ms font-fugaz-one">Mi cuenta</span>
+          <span class="self-center font-semibold whitespace-nowrap text-sky-800 text-ms font-fugaz-one">Profile</span>
 
     </div>
 
@@ -27,22 +25,35 @@
 
             <div class="px-2 py-2 text-sky-800 text-4xl font-fugaz-one">
                 <div>
-                    Name:
+                    Id: <span class="text-black">{{ auth()->user()->id }}</span> 
                 </div>
                 <div>
-                    Email:
+                    Name: <span class="text-black">{{ auth()->user()->name }}</span> 
                 </div>
                 <div>
-                    contraseña:
+                    Email: <span class="text-black">{{ auth()->user()->email }}</span> 
                 </div>
-                <div>
-                    Rol:
-                </div>
+                
             </div>
             
         </div>
 
     </div>
+
+
+
+
+
+
+    
+
+
+  
+
+
+
+
+
 
 
 
