@@ -1,7 +1,7 @@
 <?php
 
-use App\Http\Controllers\PostController;
-use GuzzleHttp\Middleware;
+
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -23,15 +23,16 @@ Route::view('/', 'welcome')->name('welcome');
 
 Route::view('/panel', 'panel')->name('panel');
 
-Route::view('/users', 'users.index')->name('users.index');
+Route::get('/users', [UserController::class, 'index'])->name('users.index');
 
 Route::group(['middleware' => ['auth', 'verified']], function () {
 
     Route::View('/home', 'home')->name('home');
 
     Route::View('/profile', 'profile')->name('profile');
+});
 
-    });
+Route::resource('user', UserController::class);
 
 
 

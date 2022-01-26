@@ -67,7 +67,7 @@
               >
                 <LogoutIcon
                   :active="active"
-                  class="w-5 h-5 mr-2"
+                  class="w-5 h-5 mr-2 text-violet-400"
                   aria-hidden="true"
                 />
                 Logout
@@ -90,7 +90,7 @@ import CsrfToken from './helpers/CsrfToken';
 import { routes } from '../js/use';
 import { Menu, MenuButton, MenuItems, MenuItem } from '@headlessui/vue'
 import { ChevronDownIcon, ArchiveIcon, DuplicateIcon, UserIcon,} from '@heroicons/vue/solid'
-import {ClipboardListIcon} from '@heroicons/vue/outline'
+import {ClipboardListIcon, LogoutIcon} from '@heroicons/vue/outline'
 
 export default {
 
@@ -107,6 +107,7 @@ export default {
     DuplicateIcon,
     UserIcon,
     ClipboardListIcon,
+    LogoutIcon,
     CsrfToken,
   },
   setup() {

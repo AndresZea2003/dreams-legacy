@@ -7,6 +7,7 @@ export default {
     setup(props) {
         token.value = props.csrf;
         routes.value = props.routes.attributes;
+        // method.value = props
     },
 }
 </script>
